@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Puglia · Stephanie &amp; Sjj · Oct 2026</title>
+<style>
+  :root {
+    --ink: #1c2430;
+    --muted: #5b6775;
+    --sea: #1f6f8b;
+    --sea-deep: #14485c;
+    --sand: #f6f1e8;
+    --clay: #c47a4a;
+    --card: #ffffff;
+    --line: #e5ddd0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, #eef5f7 0%, var(--sand) 28%, var(--sand) 100%);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header.hero {
+    background: linear-gradient(135deg, var(--sea-deep), var(--sea));
+    color: #f8fbfd;
+    border-radius: 22px;
+    padding: 2.2rem 1.8rem;
+    box-shadow: 0 18px 40px rgba(20,72,92,.25);
+  }
+  header.hero h1 { margin: 0 0 .4rem; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 600; letter-spacing: .01em; }
+  header.hero .sub { opacity: .92; font-size: 1.05rem; }
+  .badge {
+    display: inline-block; margin-top: 1rem; padding: .35rem .7rem;
+    border: 1px solid rgba(255,255,255,.35); border-radius: 999px;
+    font-size: .82rem; letter-spacing: .04em; text-transform: uppercase;
+  }
+  nav.toc {
+    display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.4rem 0 2rem;
+  }
+  nav.toc a {
+    text-decoration: none; color: var(--sea-deep); background: #fff;
+    border: 1px solid var(--line); border-radius: 999px; padding: .4rem .85rem;
+    font-size: .9rem; font-family: system-ui, -apple-system, sans-serif;
+  }
+  section { margin: 2.2rem 0; }
+  h2 {
+    font-size: 1.45rem; margin: 0 0 .9rem; color: var(--sea-deep);
+    border-bottom: 2px solid var(--clay); padding-bottom: .35rem; display: inline-block;
+  }
+  h3 { margin: 1.2rem 0 .4rem; font-size: 1.12rem; }
+  .note {
+    background: #fff8ef; border-left: 4px solid var(--clay);
+    padding: .85rem 1rem; border-radius: 0 12px 12px 0; color: var(--muted);
+    font-family: system-ui, -apple-system, sans-serif; font-size: .92rem;
+  }
+  .grid { display: grid; gap: 1rem; }
+  @media (min-width: 700px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.1rem 1.2rem; box-shadow: 0 8px 20px rgba(28,36,48,.04);
+  }
+  .card h3 { margin-top: 0; color: var(--sea); }
+  .meta {
+    font-family: system-ui, -apple-system, sans-serif; font-size: .86rem;
+    color: var(--muted); margin: .2rem 0 .7rem;
+  }
+  .day {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.15rem 1.25rem; margin: 0 0 1rem; box-shadow: 0 6px 16px rgba(28,36,48,.03);
+  }
+  .day .when {
+    font-family: system-ui, -apple-system, sans-serif; font-size: .8rem;
+    text-transform: uppercase; letter-spacing: .06em; color: var(--clay); font-weight: 700;
+  }
+  .day h3 { margin: .2rem 0 .5rem; }
+  .tag {
+    display: inline-block; font-family: system-ui, -apple-system, sans-serif;
+    font-size: .75rem; background: #e7f3f7; color: var(--sea-deep);
+    border-radius: 6px; padding: .15rem .45rem; margin-right: .25rem;
+  }
+  ul.clean { padding-left: 1.1rem; margin: .4rem 0; }
+  ul.clean li { margin: .25rem 0; }
+  .poi { margin: .85rem 0; padding-top: .85rem; border-top: 1px dashed var(--line); }
+  .poi:first-of-type { border-top: 0; padding-top: 0; }
+  .poi strong { color: var(--ink); }
+  footer {
+    margin-top: 3rem; color: var(--muted); font-size: .85rem;
+    font-family: system-ui, -apple-system, sans-serif; text-align: center;
+  }
+  a { color: var(--sea); }
+  table { width: 100%; border-collapse: collapse; font-family: system-ui, -apple-system, sans-serif; font-size: .9rem; }
+  th, td { text-align: left; padding: .55rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--sea-deep); font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Puglia by bike &amp; car</h1>
+    <div class="sub">Stephanie &amp; Sjj · mid-October 2026 · ~12 days</div>
+    <div class="badge">Working plan · nothing booked yet</div>
+  </header>
+
+  <nav class="toc">
+    <a href="#flights">Flights</a>
+    <a href="#overview">Overview</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#days">Day by day</a>
+    <a href="#loops">Bike loops</a>
+    <a href="#places">Places</a>
+    <a href="#food">Food notes</a>
+  </nav>
+
+  <p class="note">Shape: Asia Miles into <strong>Rome</strong>, car + e-bike day loops from inland then coast bases, cash hop Brindisi→Milan, Asia Miles home on <strong>CX234</strong>. Prefer mid-range character hotels (~€100–250/night), not Borgo Egnazia–tier.</p>
+
+  <section id="flights">
+    <h2>Flights</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Outbound · ~8 Oct 2026</h3>
+        <div class="meta">Asia Miles · Economy · 2 adults</div>
+        <p><strong>Hong Kong (HKG) → Rome Fiumicino (FCO)</strong></p>
+        <ul class="clean">
+          <li>~27,000 miles per person (Cathay metal when available)</li>
+          <li>Taxes last checked ~HK$3,574 for the pair on similar Italy awards</li>
+          <li>Then: FCO → Roma Termini (~35–45 min) → Frecciarossa to Bari (~4h) → rental car → Matera (~65 km / ~1h)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Bridge + home · 20–21 Oct</h3>
+        <div class="meta">Cash hop + Asia Miles</div>
+        <p><strong>20 Oct evening</strong> — Brindisi (BDS) → Milan Malpensa (MXP)<br/>
+        easyJet-style evening hop previously ~US$36 for two (e.g. ~22:15→00:05+1). Overnight near MXP.</p>
+        <p><strong>21 Oct</strong> — <strong>CX234</strong> MXP 12:45 → HKG 06:15+1<br/>
+        27,000 miles each + ~HK$3,208 taxes for two (confirmed award seat when last checked).</p>
+      </div>
+    </div>
+    <p class="meta" style="margin-top:1rem">Open-jaw logic: Rome in for Matera start; Milan out after Brindisi. One-way car <strong>Bari pickup → Brindisi drop</strong>.</p>
+  </section>
+
+  <section id="overview">
+    <h2>Trip overview</h2>
+    <table>
+      <thead><tr><th>Phase</th><th>Nights</th><th>Focus</th></tr></thead>
+      <tbody>
+        <tr><td>Matera</td><td>8–9 Oct (2)</td><td>Sassi walking · no big rides</td></tr>
+        <tr><td>Alberobello / Valle d’Itria</td><td>10–13 Oct (4)</td><td>E-bike day loops on Acquedotto + trulli roads</td></tr>
+        <tr><td>Monopoli coast</td><td>14–17 Oct (4)</td><td>Polignano loop · Ostuni day · rest</td></tr>
+        <tr><td>Lecce</td><td>18–19 Oct (2)</td><td>Baroque walk · food</td></tr>
+        <tr><td>Malpensa</td><td>20 Oct (1)</td><td>Airport overnight for CX234</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="hotels">
+    <h2>Proposed hotels (mid-range)</h2>
+    <div class="grid two">
+      <div class="card"><h3>Matera · Il Granile Contemporary Loft</h3><div class="meta">8–10 Oct · ~€180/night · Booking 9.6</div><p>Stylish loft near the centro; creative remodel, quiet, great host. Walkable to Sassi without living deep in the caves.</p><p><a href="https://www.booking.com/hotel/it/il-granile-contemporary-loft.html" target="_blank" rel="noopener">Booking.com</a></p></div>
+      <div class="card"><h3>Alberobello · Uniconico or Masseria Rosa</h3><div class="meta">10–14 Oct · ~€150–160/night</div><p><strong>Uniconico</strong> (9.7): real trullo in town, walk everywhere.<br/><strong>Masseria Rosa</strong> (9.3): countryside pool + ciclovia access — better bike base.</p>
+        <p><a href="https://www.booking.com/hotel/it/uniconico-trullo-amp-rooms.html" target="_blank" rel="noopener">Uniconico</a> · <a href="https://www.booking.com/hotel/it/masseria-rosa-trulli-relais.html" target="_blank" rel="noopener">Masseria Rosa</a></p></div>
+      <div class="card"><h3>Monopoli · Palazzo Veneziani</h3><div class="meta">14–18 Oct · ~€156/night · 9.9 (thin sample)</div><p>Old-town character, spacious rooms, strong host praise. Base for Polignano + Ostuni.</p><p><a href="https://www.booking.com/hotel/it/palazzo-veneziani.html" target="_blank" rel="noopener">Booking.com</a></p></div>
+      <div class="card"><h3>Lecce · Palazzo Bernardini Suites</h3><div class="meta">18–20 Oct · ~€165/night B&amp;B · 9.5</div><p>Quiet street near the Duomo; antique suites, lovely breakfast, “private home” feel.</p><p><a href="https://www.booking.com/hotel/it/palazzo-bernardini.html" target="_blank" rel="noopener">Booking.com</a></p></div>
+    </div>
+  </section>
+
+  <section id="days">
+    <h2>Day by day</h2>
+
+    <article class="day">
+      <div class="when">Wed 8 Oct · Arrive</div>
+      <h3>Hong Kong → Rome → Bari → Matera</h3>
+      <span class="tag">Flights / rail / drive</span>
+      <ul class="clean">
+        <li>Asia Miles into FCO; transfer to Termini (~35–45 min)</li>
+        <li>High-speed train Roma → Bari Centrale (~4h)</li>
+        <li>Pick up hire car → drive Bari → Matera <strong>~65 km / ~1h</strong></li>
+        <li>Evening: gentle Sassi wander, early night</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Thu 9 Oct · Matera</div>
+      <h3>Sassi on foot</h3>
+      <span class="tag">Sightseeing</span>
+      <ul class="clean">
+        <li>Full day walking Sasso Caveoso &amp; Barisano, Belvedere, rock churches</li>
+        <li>Dinner ideas: ARA or Era Convivial Cave Restaurant</li>
+        <li>No drive day</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Fri 10 Oct · Move inland</div>
+      <h3>Matera → Alberobello</h3>
+      <span class="tag">Drive</span> <span class="tag">E-bike pickup</span>
+      <ul class="clean">
+        <li>Drive <strong>~70 km / ~1h10–1h20</strong></li>
+        <li>Check in; collect e-bikes (deliver to Locorotondo/Alberobello)</li>
+        <li>Short shakeout ride among the trulli</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Sat 11 Oct · Ride day</div>
+      <h3>Loop 1 — Acquedotto classic</h3>
+      <span class="tag">~50–55 km</span> <span class="tag">~3–4h riding</span>
+      <ul class="clean">
+        <li>Alberobello → Locorotondo → Cisternino on Ciclovia dell’Acquedotto + quiet lanes</li>
+        <li>Coffee / lunch in white towns; return to base</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Sun 12 Oct · Ride day</div>
+      <h3>Loop 2 — Trulli &amp; Martina Franca</h3>
+      <span class="tag">~50–60 km</span> <span class="tag">~3–4h riding</span>
+      <ul class="clean">
+        <li>Country roads through trulli countryside toward Noci / Martina Franca</li>
+        <li>Baroque centre stroll in Martina Franca if timing works</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Mon 13 Oct · Easy</div>
+      <h3>Rest or short spin</h3>
+      <span class="tag">Optional short ride</span>
+      <ul class="clean">
+        <li>Sleep in, pool (if Masseria Rosa), or easy local loop</li>
+        <li>Optional: one overnight to Cisternino/Ostuni with car parked — only if you want</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Tue 14 Oct · Coast move</div>
+      <h3>Alberobello → Ostuni → Monopoli</h3>
+      <span class="tag">Drive + walk</span>
+      <ul class="clean">
+        <li>Alberobello → Ostuni <strong>~35 km / ~40–45 min</strong> — lunch + white-city walk</li>
+        <li>Ostuni → Monopoli <strong>~25–30 km / ~30–35 min</strong></li>
+        <li>Total driving ~60–65 km / ~1h15 plus Ostuni stop</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Wed 15 Oct · Ride day</div>
+      <h3>Loop 3 — Polignano coast</h3>
+      <span class="tag">~45–55 km</span> <span class="tag">~3h riding</span>
+      <ul class="clean">
+        <li>Monopoli → Polignano a Mare → return along coast / inland lanes</li>
+        <li>Pastry stop: La Rotellina in Polignano</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Thu 16 Oct · Coast rest</div>
+      <h3>Beach / town day</h3>
+      <span class="tag">Rest</span>
+      <ul class="clean">
+        <li>Swim if warm enough, old town Monopoli, long lunch</li>
+        <li>Little or no driving</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Fri 17 Oct · Flex</div>
+      <h3>Ostuni olive lanes or lazy coast</h3>
+      <span class="tag">Optional ride / drive</span>
+      <ul class="clean">
+        <li>Option A: Monopoli ↔ Ostuni (~30 km / ~35 min each way) + short olive-grove loop</li>
+        <li>Option B: second easy coast spin or full rest</li>
+        <li>Arrange e-bike collection if timed for Monopoli</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Sat 18 Oct · Salento</div>
+      <h3>Monopoli → Lecce</h3>
+      <span class="tag">Drive ~100–110 km / ~1h15–1h30</span>
+      <ul class="clean">
+        <li>Afternoon in Lecce centro: Santa Croce, Piazza Duomo</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Sun 19 Oct · Lecce</div>
+      <h3>Baroque walk day</h3>
+      <span class="tag">Sightseeing</span>
+      <ul class="clean">
+        <li>Full day on foot; optional light countryside spin</li>
+        <li>Evening food in the old town</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Mon 20 Oct · Exit</div>
+      <h3>Lecce → Brindisi → Milan</h3>
+      <span class="tag">Drive ~45–55 km / ~40–50 min</span> <span class="tag">Flight</span>
+      <ul class="clean">
+        <li>Leave buffer for car drop at BDS</li>
+        <li>Evening cash flight BDS → MXP; overnight near Malpensa</li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="when">Tue 21 Oct · Home</div>
+      <h3>CX234 Milan → Hong Kong</h3>
+      <span class="tag">Asia Miles</span>
+      <ul class="clean">
+        <li>Depart MXP 12:45 · arrive HKG 06:15+1</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="loops">
+    <h2>Bike loops (detail)</h2>
+    <div class="card">
+      <h3>1 · Valle d’Itria Acquedotto</h3>
+      <div class="meta">~50–55 km · rolling · signature ride</div>
+      <p>Mix of the dedicated <em>Ciclovia dell’Acquedotto Pugliese</em> (~scenic aqueduct path) and quiet secondary roads through olive and trulli country. Links Alberobello, Locorotondo, and Cisternino — the postcard inland trio.</p>
+    </div>
+    <div class="card" style="margin-top:1rem">
+      <h3>2 · Trulli &amp; Martina Franca</h3>
+      <div class="meta">~50–60 km · a bit more climbing</div>
+      <p>Country lanes past cone-roof houses toward Noci or Martina Franca’s baroque centre. More “town hopping,” slightly hillier than the aqueduct loop.</p>
+    </div>
+    <div class="card" style="margin-top:1rem">
+      <h3>3 · Monopoli–Polignano coast</h3>
+      <div class="meta">~45–55 km · flatter · go early</div>
+      <p>Adriatic cliffs, old harbours, gelato towns. Busier near the water — start early. Perfect contrast after inland rides.</p>
+    </div>
+  </section>
+
+  <section id="places">
+    <h2>Places &amp; points of interest</h2>
+
+    <div class="card">
+      <div class="poi"><strong>Matera &amp; the Sassi</strong><br/>One of the world’s oldest continually inhabited places: cave dwellings stacked in ravines (Sasso Caveoso &amp; Barisano), now a UNESCO site and cinematic backdrop. Best on foot — uneven stone, stairs, viewpoints over the Gravina gorge.</div>
+      <div class="poi"><strong>Alberobello</strong><br/>UNESCO town of <em>trulli</em> — white limestone huts with conical stone roofs. Touristy at midday; magical early or late. Ideal e-bike hub for Valle d’Itria.</div>
+      <div class="poi"><strong>Locorotondo</strong><br/>Circular white hill town with a refined centro and wide views over vineyards and trulli roofs. Classic coffee/lunch stop on the aqueduct loop.</div>
+      <div class="poi"><strong>Cisternino</strong><br/>Quieter white town famous for evening <em>fornelli</em> (butcher-grill culture). Charming lanes; less crowded than Alberobello.</div>
+      <div class="poi"><strong>Martina Franca</strong><br/>Larger baroque town on the edge of the valley — palazzi, gates, and a lived-in centre. Good turnaround for Loop 2.</div>
+      <div class="poi"><strong>Ciclovia dell’Acquedotto Pugliese</strong><br/>Long-distance cycle path following the historic aqueduct. The Valle d’Itria section is the scenic heart: mostly dedicated path mixed with quiet roads (not 100% bike-only).</div>
+      <div class="poi"><strong>Ostuni</strong><br/>The “white city” on a hill above olive country — blinding white walls, cathedral, Adriatic views. Perfect mid-trip walk when shifting inland → coast.</div>
+      <div class="poi"><strong>Monopoli</strong><br/>Working harbour town with a lively old centre and nearby coves. Practical coast base: restaurants, character stays, easy access to Polignano and Ostuni.</div>
+      <div class="poi"><strong>Polignano a Mare</strong><br/>Cliff town over turquoise water; Lama Monachile beach cove is the iconic shot. Short, spectacular ride target from Monopoli.</div>
+      <div class="poi"><strong>Lecce</strong><br/>“Florence of the South” — exuberant Leccese baroque in golden stone (Santa Croce, Piazza Duomo). Walkable finale before the Brindisi hop.</div>
+      <div class="poi"><strong>Brindisi Airport (BDS)</strong><br/>Handy exit for Salento; ~40–50 min from Lecce. Drop the one-way hire car here before the Milan connector.</div>
+    </div>
+  </section>
+
+  <section id="food">
+    <h2>Food notes (from Kayan C’s Puglia eps)</h2>
+    <ul class="clean">
+      <li><strong>Matera</strong> — ARA; Era Convivial Cave Restaurant</li>
+      <li><strong>Polignano</strong> — La Rotellina (pastry)</li>
+      <li><strong>Savelletri area</strong> — Masseria Torre Coccaro (dinner; upscale)</li>
+      <li>Local staples: orecchiette, burrata, grilled meats in Cisternino, seafood on the Adriatic</li>
+    </ul>
+  </section>
+
+  <footer>
+    Built for Stephanie &amp; Sjj · Travel Planner · Oct 2026 working draft · Verify award seats, train times, and hotel rates before booking
+  </footer>
+</div>
+</body>
+</html>
