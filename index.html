@@ -33,6 +33,7 @@
   }
   header.hero h1 { margin: 0 0 .4rem; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 600; letter-spacing: .01em; }
   header.hero .sub { opacity: .92; font-size: 1.05rem; }
+  header.hero .lede { margin: 1rem 0 0; max-width: 38em; opacity: .95; font-size: 1.02rem; line-height: 1.5; }
   .badge {
     display: inline-block; margin-top: 1rem; padding: .35rem .7rem;
     border: 1px solid rgba(255,255,255,.35); border-radius: 999px;
@@ -77,10 +78,11 @@
     text-transform: uppercase; letter-spacing: .06em; color: var(--clay); font-weight: 700;
   }
   .day h3 { margin: .2rem 0 .5rem; }
+  .day p { margin: .55rem 0; }
   .tag {
     display: inline-block; font-family: system-ui, -apple-system, sans-serif;
     font-size: .75rem; background: #e7f3f7; color: var(--sea-deep);
-    border-radius: 6px; padding: .15rem .45rem; margin-right: .25rem;
+    border-radius: 6px; padding: .15rem .45rem; margin-right: .25rem; margin-bottom: .35rem;
   }
   .tag.rec { background: #f3e8df; color: #8a4d28; }
   .stay {
@@ -94,6 +96,12 @@
   .poi { margin: .85rem 0; padding-top: .85rem; border-top: 1px dashed var(--line); }
   .poi:first-of-type { border-top: 0; padding-top: 0; }
   .poi strong { color: var(--ink); }
+  .stats {
+    font-family: system-ui, -apple-system, sans-serif; font-size: .88rem;
+    background: #eef6f8; border-radius: 10px; padding: .7rem .9rem; margin: .6rem 0;
+    color: var(--sea-deep);
+  }
+  .stats strong { color: var(--ink); }
   footer {
     margin-top: 3rem; color: var(--muted); font-size: .85rem;
     font-family: system-ui, -apple-system, sans-serif; text-align: center;
@@ -109,7 +117,8 @@
 <div class="wrap">
   <header class="hero">
     <h1>Stephanie &amp; Sjj</h1>
-    <div class="sub">Puglia by bike &amp; car · 8–21 Oct 2026</div>
+    <div class="sub">Puglia · bike lanes, cellars &amp; white towns · 8–21 Oct 2026</div>
+    <p class="lede">Two weeks south: a Rome night for JJ’s Colosseum morning, then Matera’s caves, e-bike loops through the Valle d’Itria, harbour days in Monopoli, and Lecce’s golden baroque on the way home. October means wine crush and olive harvest — the good kind of busy.</p>
     <div class="badge">Working draft · verify before booking</div>
   </header>
 
@@ -125,165 +134,113 @@
     <a href="#food">Food notes</a>
   </nav>
 
-  <p class="note">Shape: Asia Miles <strong>CX293</strong> into Rome (night + Colosseum morning for JJ), Frecciarossa to Bari, car + e-bike loops inland then coast, cash hop BDS→MXP, Asia Miles <strong>CX234</strong> home. One-way car <strong>Bari pickup → Brindisi (BDS) drop</strong> — not Rome. Prefer mid-range character hotels (~€100–250/night). Mid-October lands in <strong>wine crush</strong> and <strong>olive harvest</strong> season — good timing for cellar tastings and mill visits.</p>
+  <p class="note">Shape: Asia Miles <strong>CX293</strong> into Rome, Frecciarossa to Bari, hire car Bari → Brindisi (BDS) drop, cash hop to Milan, Asia Miles <strong>CX234</strong> home. Mid-range character hotels (~€100–250/night). Prefer rides around <strong>~50 km</strong>. Mid-October is <strong>vendemmia</strong> and <strong>olive harvest</strong> — book cellars and the mill ahead.</p>
 
   <section id="days">
     <h2>Day by day</h2>
 
     <article class="day">
       <div class="when">Thu 8 Oct · Arrive Rome</div>
-      <h3>CX293 Hong Kong → Rome</h3>
-      <span class="tag">Flight</span> <span class="tag">City night</span>
+      <h3>Long night over Asia, soft landing in the city</h3>
+      <span class="tag">CX293</span> <span class="tag">Rome night</span>
       <div class="stay"><strong>Stay:</strong> Rome hotel near Termini / Colosseo (proposed / TBD) · 1 night · favour Metro B + morning Termini access · ~€150–220</div>
-      <ul class="clean">
-        <li><strong>CX293</strong> HKG T1 00:30 → FCO T3 07:35 · A350 nonstop ~13h05</li>
-        <li>FCO → city (Leonardo Express / taxi) · check in · easy evening walk</li>
-        <li>Night in Rome — rest for Colosseum morning</li>
-      </ul>
+      <p><strong>CX293</strong> lifts from HKG T1 at 00:30 and touches FCO T3 at 07:35 — A350 nonstop, about thirteen hours. Leonardo Express or a taxi into town, check in, then nothing heroic: a short evening walk, early sleep. Tomorrow is JJ’s Colosseum morning, and you’ll want legs for it.</p>
     </article>
 
     <article class="day">
       <div class="when">Fri 9 Oct · Rome → Matera</div>
-      <h3>Colosseum for JJ · train · Bari car · Matera</h3>
+      <h3>Colosseum first · then the long train south</h3>
       <span class="tag">Colosseum</span> <span class="tag">Rail</span> <span class="tag">Drive</span>
       <div class="stay"><strong>Move day:</strong> check out Rome morning → <strong>check in</strong> <a href="https://www.booking.com/hotel/it/il-granile-contemporary-loft.html" target="_blank" rel="noopener">Il Granile Contemporary Loft</a>, Matera (night of 9; stay through Sat 10) · ~€180/night · Booking 9.6</div>
-      <ul class="clean">
-        <li><strong>Morning:</strong> Colosseum (pre-book timed entry) — priority stop for JJ</li>
-        <li>Transfer to Roma Termini; bag logistics as needed</li>
-        <li><strong>Roma Termini → Bari Centrale:</strong> 13:15–17:43 · <strong>14:58–19:20 recommended</strong> (14:58 Roma–Bari train) · 15:57–20:20 · 18:05–22:19</li>
-        <li>Pick up hire car in Bari → Matera <strong>~65 km / ~1h</strong></li>
-        <li>Evening: gentle Sassi wander, early night</li>
-      </ul>
+      <p>Morning is for the amphitheatre — timed entry booked, priority stop for JJ. After that you’re bag-and-Termini people: the <strong>14:58 Roma → Bari</strong> (arrive 19:20) is the sweet spot after a Colosseum morning; earlier 13:15–17:43 or later 15:57 / 18:05 trains work if the schedule slips. Hire car at Bari, then the short hop to Matera — <strong>~65 km / ~1h</strong>. Evening: a gentle Sassi wander and an early night in the loft.</p>
     </article>
 
     <article class="day">
       <div class="when">Sat 10 Oct · Matera</div>
-      <h3>Sassi, Casa Grotta &amp; the “Sistine of rock art”</h3>
-      <span class="tag">Sightseeing</span> <span class="tag rec">Book ahead</span>
+      <h3>Cave streets, a furnished grotto, and the “Sistine of rock art”</h3>
+      <span class="tag">Sassi</span> <span class="tag rec">Book crypt</span>
       <div class="stay"><strong>Stay:</strong> still at <a href="https://www.booking.com/hotel/it/il-granile-contemporary-loft.html" target="_blank" rel="noopener">Il Granile Contemporary Loft</a>, Matera · 2nd night</div>
-      <ul class="clean">
-        <li><strong>Morning–midday:</strong> walk Sasso Caveoso &amp; Barisano, Belvedere, rock churches — pause at a furnished <strong>Casa Grotta</strong> (e.g. Vico Solitario) to see how families lived in the cave dwellings</li>
-        <li><strong>Afternoon:</strong> timed guided visit to <strong>Cripta del Peccato Originale</strong> (~15 km / ~20 min drive) — vivid medieval frescoes, often called the “Sistine of rock art”; book a slot ahead</li>
-        <li>Dinner ideas: ARA or Era Convivial Cave Restaurant</li>
-        <li>No big ride day</li>
-      </ul>
+      <p>Give the morning to Caveoso and Barisano — stairs, belvederes, rock churches — and duck into a furnished <strong>Casa Grotta</strong> (Vico Solitario or similar) to see how families actually lived in the stone: bed, kitchen, cistern, mule stall. Afternoon drive ~15 km / ~20 min to the <strong>Cripta del Peccato Originale</strong> for a timed guided look at those medieval frescoes. Dinner ideas: ARA or Era Convivial. No bike day; just walking and wonder.</p>
     </article>
 
     <article class="day">
       <div class="when">Sun 11 Oct · Move inland</div>
-      <h3>Matera → Alberobello</h3>
-      <span class="tag">Drive</span> <span class="tag">E-bike pickup</span>
+      <h3>Matera hands you to the trulli</h3>
+      <span class="tag">Drive ~70 km</span> <span class="tag">E-bike pickup</span>
       <div class="stay"><strong>Move day:</strong> leave Matera morning (check out Il Granile) → <strong>check in</strong> <a href="https://www.booking.com/hotel/it/uniconico-trullo-amp-rooms.html" target="_blank" rel="noopener">Uniconico</a> or <a href="https://www.booking.com/hotel/it/masseria-rosa-trulli-relais.html" target="_blank" rel="noopener">Masseria Rosa</a>, Alberobello (nights 11–13) · ~€150–160/night</div>
-      <ul class="clean">
-        <li>Drive <strong>~70 km / ~1h10–1h20</strong></li>
-        <li>Check in; collect e-bikes (deliver to Locorotondo/Alberobello)</li>
-        <li>Short shakeout ride among the trulli</li>
-      </ul>
+      <p>About <strong>70 km / 1h10–1h20</strong> into cone-roof country. Check in, collect the e-bikes (deliver to Locorotondo or Alberobello), and take a short shakeout among the trulli before tomorrow’s classic loop.</p>
     </article>
 
     <article class="day">
       <div class="when">Mon 12 Oct · Ride + tasting</div>
-      <h3>Loop 1 — Acquedotto classic · Cantina MIR stop</h3>
-      <span class="tag">~50–55 km</span> <span class="tag">~3–4h riding</span> <span class="tag rec">Book tasting</span>
+      <h3>Acquedotto loop · underground wine in Locorotondo</h3>
+      <span class="tag">~50–56 km</span> <span class="tag">~440–555 m↑</span> <span class="tag rec">Book MIR</span>
       <div class="stay"><strong>Stay:</strong> Uniconico or Masseria Rosa, Alberobello · continuing</div>
-      <ul class="clean">
-        <li>Alberobello → Locorotondo → Cisternino on Ciclovia dell’Acquedotto + quiet lanes</li>
-        <li><strong>Stop in Locorotondo:</strong> <strong>Cantina MIR</strong> (Piazza Aldo Moro 51) — hypogeum cellar tasting (Verdeca / Locorotondo DOC + reds). Book the tasting; shorten the ride if the slot runs long</li>
-        <li>Coffee / lunch in the white towns; return to base</li>
-      </ul>
+      <p>Signature inland day: Alberobello → Locorotondo → Cisternino on the <em>Ciclovia dell’Acquedotto</em> and quiet lanes — white towns, dry-stone walls, olive rows. Expect roughly <strong>50–56 km</strong> and <strong>~440–555 m</strong> of climbing (rolling, not alpine). In Locorotondo, drop into <strong>Cantina MIR</strong> (Piazza Aldo Moro 51) for a hypogeum tasting of Verdeca / Locorotondo DOC and reds — book the slot; trim the ride if it runs long. Coffee and lunch in the white towns, then roll home.</p>
     </article>
 
     <article class="day">
       <div class="when">Tue 13 Oct · Experiences day</div>
-      <h3>Olive mill · Martina Franca · trullo cooking class</h3>
+      <h3>Oil mill, baroque stroll, pasta in a trullo</h3>
       <span class="tag rec">Harvest season</span> <span class="tag">Cooking</span> <span class="tag">Optional short ride</span>
       <div class="stay"><strong>Stay:</strong> Uniconico or Masseria Rosa, Alberobello · last night (check out Wed morning)</div>
-      <ul class="clean">
-        <li><strong>Morning:</strong> <strong>L’Acropoli di Puglia</strong> olive oil mill, Martina Franca — historic mill tour + tasting; mid-Oct is harvest season, so the place should feel alive</li>
-        <li><strong>Optional:</strong> short stroll through Martina Franca’s baroque centro between mill and lunch</li>
-        <li><strong>Afternoon / evening:</strong> <strong>trullo cooking class</strong> near Alberobello (Maria’s / Cesarine or similar orecchiette class) — book ahead; hands-on pasta and local produce</li>
-        <li>Loop 2 (trulli / Martina Franca ride) becomes <strong>optional or shorter</strong> — only if energy remains after the mill</li>
-      </ul>
+      <p>Morning at <strong>L’Acropoli di Puglia</strong> in Martina Franca — historic mill tour and tasting while the harvest is humming. Optional wander through Martina’s baroque centro between mill and lunch. Afternoon or evening: a <strong>trullo cooking class</strong> near Alberobello (Maria’s / Cesarine or similar) — orecchiette, seasonal produce, book ahead. Loop 2 (trulli &amp; Martina Franca, roughly <strong>35–40 km / ~300–360 m↑</strong>) stays optional or short; only if legs still want it after oil and pasta.</p>
     </article>
 
     <article class="day">
       <div class="when">Wed 14 Oct · Coast move</div>
-      <h3>Alberobello → Monopoli (direct)</h3>
-      <span class="tag">Drive</span>
+      <h3>Straight to Monopoli — Ostuni waits for Saturday</h3>
+      <span class="tag">Drive ~22 km</span>
       <div class="stay"><strong>Move day:</strong> leave Alberobello morning → <strong>check in</strong> <a href="https://www.booking.com/hotel/it/palazzo-veneziani.html" target="_blank" rel="noopener">Palazzo Veneziani</a>, Monopoli (nights 14–17) · ~€156/night · 9.9</div>
-      <ul class="clean">
-        <li>Alberobello → Monopoli <strong>direct ~22 km / ~25–30 min</strong> — no Ostuni stop on this move day</li>
-        <li>Check in at Palazzo Veneziani; easy afternoon in town</li>
-        <li>Ostuni is saved for <strong>Sat 17</strong> (market + olive-grove walk) — sole Ostuni visit</li>
-      </ul>
+      <p>Alberobello → Monopoli <strong>direct ~22 km / ~25–30 min</strong> — no Ostuni detour today. Settle into Palazzo Veneziani and take the afternoon easy in the old town. The white city gets its own day on <strong>Sat 17</strong> (market + olive-grove walk) — the sole Ostuni visit of the trip.</p>
     </article>
 
     <article class="day">
       <div class="when">Thu 15 Oct · Polignano</div>
-      <h3>Boat cave tour · bike backup if rough seas</h3>
+      <h3>Sea caves if the Adriatic cooperates</h3>
       <span class="tag rec">Primary: boat</span> <span class="tag">Backup: bike</span>
       <div class="stay"><strong>Stay:</strong> <a href="https://www.booking.com/hotel/it/palazzo-veneziani.html" target="_blank" rel="noopener">Palazzo Veneziani</a>, Monopoli · continuing</div>
-      <ul class="clean">
-        <li><strong>Primary:</strong> <strong>boat cave tour</strong> from Polignano a Mare (Grotta Palazzese and neighbouring sea caves) — typically ~1.5–2.5h, runs Mar–Oct. Book a cancellable ticket; October seas can cancel trips</li>
-        <li><strong>Backup if rough sea:</strong> Loop 3 — Monopoli → Polignano bike loop + pastry at La Rotellina</li>
-        <li>Either way, linger on the cliffs and Lama Monachile cove</li>
-      </ul>
+      <p>Primary plan: a <strong>boat cave tour</strong> from Polignano a Mare (Grotta Palazzese and neighbours) — typically 1.5–2.5h, season runs through October. Book cancellable; autumn seas can scrub a trip. If the boat’s off, ride <strong>Loop 3</strong> Monopoli → Polignano (~<strong>28–32 km</strong> out-and-back, or up to ~45–50 km if you stretch the coastal spin; approx <strong>90–180 m↑</strong>, nearly flat) and claim a pastry at La Rotellina. Either way, linger on the cliffs and Lama Monachile.</p>
     </article>
 
     <article class="day">
-      <div class="when">Fri 16 Oct · Coast rest</div>
-      <h3>Beach / town day</h3>
-      <span class="tag">Rest</span>
+      <div class="when">Fri 16 Oct · Susumaniello day</div>
+      <h3>Tenute Rubino · then Monopoli harbour at dusk</h3>
+      <span class="tag rec">Book winery</span> <span class="tag">Drive ~50–60 km</span>
       <div class="stay"><strong>Stay:</strong> Palazzo Veneziani, Monopoli · continuing</div>
-      <ul class="clean">
-        <li>Swim if warm enough, old town Monopoli, long lunch</li>
-        <li>Little or no driving</li>
-      </ul>
+      <p>October wants cellars more than a lounger day — so this free coast slot becomes a wine day. Drive from Monopoli toward Brindisi (~50–60 km / ~45–55 min) for <strong>Tenute Rubino</strong>, the house of <em>Susumaniello</em>: cellar tour and tasting (Wine &amp; Cellar ~€35 / 1.5h, or Susumaniello Experience with food ~€85 / ~3h). Book ahead. Back in Monopoli by late afternoon for old-town lanes, the working harbour, and a long seafood dinner — no swim framing, just town and wine.</p>
     </article>
 
     <article class="day">
       <div class="when">Sat 17 Oct · Sole Ostuni day</div>
-      <h3>Ostuni Saturday market + olive-grove walk</h3>
-      <span class="tag rec">Ostuni (only visit)</span> <span class="tag">Optional rest</span>
+      <h3>Saturday market and olive rows</h3>
+      <span class="tag rec">Ostuni (only visit)</span>
       <div class="stay"><strong>Stay:</strong> Palazzo Veneziani, Monopoli · last night (check out Sun morning)</div>
-      <ul class="clean">
-        <li><strong>This is the Ostuni visit</strong> (not a repeat — Wed 14 went inland→coast direct): drive from Monopoli for the <strong>Saturday morning market</strong>, then a short olive-grove walk in the surrounding countryside (~30 km / ~35 min each way)</li>
-        <li>Option B: second easy coast spin or full rest if weather / energy say so</li>
-        <li>Arrange e-bike collection if timed for Monopoli</li>
-      </ul>
+      <p>This is the Ostuni visit — not a repeat; Wednesday went straight inland-to-coast. Drive from Monopoli (~30 km / ~35 min each way) for the <strong>Saturday morning market</strong>, then a short olive-grove walk in the countryside below the white walls. Arrange e-bike collection if it’s timed for Monopoli. If energy’s thin after yesterday’s cellar, keep the afternoon soft back at the harbour.</p>
     </article>
 
     <article class="day">
       <div class="when">Sun 18 Oct · Salento</div>
-      <h3>Monopoli → Lecce</h3>
+      <h3>Monopoli loosens its grip · Lecce takes over</h3>
       <span class="tag">Drive ~100–110 km / ~1h15–1h30</span>
       <div class="stay"><strong>Move day:</strong> leave Monopoli morning (check out Palazzo Veneziani) → <strong>check in</strong> <a href="https://www.booking.com/hotel/it/palazzo-bernardini.html" target="_blank" rel="noopener">Palazzo Bernardini Suites</a>, Lecce (nights 18–19) · ~€165/night B&amp;B · 9.5</div>
-      <ul class="clean">
-        <li>Afternoon in Lecce centro: Santa Croce, Piazza Duomo</li>
-      </ul>
+      <p>South into Salento. Afternoon for the golden-stone centro — Santa Croce’s exuberance, Piazza Duomo at the soft hour — and a first taste of Lecce food before tomorrow’s winery run.</p>
     </article>
 
     <article class="day">
       <div class="when">Mon 19 Oct · Lecce + winery</div>
-      <h3>Conti Zecca tasting · baroque evening</h3>
+      <h3>Conti Zecca by day · baroque by night</h3>
       <span class="tag rec">Winery</span> <span class="tag">Baroque</span>
       <div class="stay"><strong>Stay:</strong> <a href="https://www.booking.com/hotel/it/palazzo-bernardini.html" target="_blank" rel="noopener">Palazzo Bernardini Suites</a>, Lecce · 2nd night (check out Tue morning)</div>
-      <ul class="clean">
-        <li><strong>Morning / afternoon:</strong> <strong>Conti Zecca</strong> winery tasting in Leverano (~30–40 min drive) — cellar tour + Negroamaro / Primitivo; book ahead (crush season)</li>
-        <li><strong>Evening:</strong> back in Lecce for baroque streets and old-town food — Santa Croce glow, aperitivo, dinner</li>
-      </ul>
+      <p>Out to <strong>Conti Zecca</strong> in Leverano (~30–40 min) for a cellar tour and Negroamaro / Primitivo tasting — crush season still in the air; book ahead. Evening back in Lecce: Santa Croce glow, aperitivo, dinner in the old streets. Third wine stop of the trip after MIR and Rubino.</p>
     </article>
 
     <article class="day">
       <div class="when">Tue 20 Oct · Exit</div>
-      <h3>Lecce → Brindisi → Milan</h3>
-      <span class="tag">Drive ~45–55 km / ~40–50 min</span> <span class="tag">Flight</span>
+      <h3>Lecce → Brindisi → Milan overnight</h3>
+      <span class="tag">Drive ~45–55 km</span> <span class="tag">BDS → MXP</span>
       <div class="stay"><strong>Move day:</strong> check out Lecce → BDS car drop → evening hop to MXP → <strong>check in</strong> Malpensa airport hotel (1 night; Sheraton / Hilton Garden / similar)</div>
-      <ul class="clean">
-        <li>Leave buffer for car drop at <strong>BDS</strong> (Bari pickup → BDS drop — not Rome)</li>
-        <li>Evening cash flight BDS → MXP (e.g. easyJet ~22:15→00:05+1; lock number when booking)</li>
-        <li>Overnight near Malpensa</li>
-      </ul>
+      <p>Leave buffer for the one-way drop at <strong>BDS</strong> (Bari pickup → Brindisi drop — not Rome). Evening cash flight BDS → MXP (e.g. easyJet ~22:15→00:05+1; lock the number when booking), then a simple overnight near Malpensa for the midday Asia Miles home.</p>
     </article>
 
     <article class="day">
@@ -291,23 +248,21 @@
       <h3>CX234 Milan → Hong Kong</h3>
       <span class="tag">Asia Miles</span>
       <div class="stay"><strong>Depart:</strong> check out Malpensa hotel morning for midday CX234</div>
-      <ul class="clean">
-        <li><strong>CX234</strong> depart MXP 12:45 · arrive HKG 06:15+1</li>
-      </ul>
+      <p><strong>CX234</strong> departs MXP 12:45 and lands HKG 06:15 the next calendar day. Bags, coffee, and the long arc home.</p>
     </article>
   </section>
 
   <section id="overview">
     <h2>Trip overview</h2>
-    <p class="note" style="margin-bottom:1rem">Season note: mid-Oct is peak <strong>vendemmia</strong> (wine crush) and <strong>olive harvest</strong> across Puglia — cellar and mill visits feel especially alive. Book timed slots ahead for the crypt, tastings, cooking class, and boat tour.</p>
+    <p class="note" style="margin-bottom:1rem">Mid-Oct is peak <strong>vendemmia</strong> and <strong>olive harvest</strong> — cellars and mills feel especially alive. Book timed slots for the crypt, MIR, Rubino, Conti Zecca, cooking class, and boat tour.</p>
     <table>
       <thead><tr><th>Phase</th><th>Nights</th><th>Focus</th></tr></thead>
       <tbody>
-        <tr><td>Rome</td><td>8 Oct (1)</td><td>Arrive CX293 · night in city · Colosseum morning 9 Oct for JJ</td></tr>
+        <tr><td>Rome</td><td>8 Oct (1)</td><td>Arrive CX293 · city night · Colosseum morning 9 Oct for JJ</td></tr>
         <tr><td>Matera</td><td>9–10 Oct (2)</td><td>Sassi + Casa Grotta · Cripta del Peccato Originale</td></tr>
-        <tr><td>Alberobello / Valle d’Itria</td><td>11–13 Oct (3)</td><td>Acquedotto ride + Cantina MIR · olive mill · trullo cooking class</td></tr>
-        <tr><td>Monopoli coast</td><td>14–17 Oct (4)</td><td>Direct coast move · Polignano boat caves · Ostuni Sat 17 only · rest</td></tr>
-        <tr><td>Lecce</td><td>18–19 Oct (2)</td><td>Conti Zecca tasting · baroque walk · food</td></tr>
+        <tr><td>Alberobello / Valle d’Itria</td><td>11–13 Oct (3)</td><td>Acquedotto ride + Cantina MIR · olive mill · trullo cooking</td></tr>
+        <tr><td>Monopoli coast</td><td>14–17 Oct (4)</td><td>Direct coast move · Polignano boat · Tenute Rubino Fri 16 · Ostuni Sat 17 only</td></tr>
+        <tr><td>Lecce</td><td>18–19 Oct (2)</td><td>Conti Zecca · baroque walk · food</td></tr>
         <tr><td>Malpensa</td><td>20 Oct (1)</td><td>BDS→MXP cash hop · overnight for CX234</td></tr>
       </tbody>
     </table>
@@ -364,7 +319,7 @@
       <div class="card"><h3>Matera · Il Granile Contemporary Loft</h3><div class="meta">9–11 Oct · ~€180/night · Booking 9.6</div><p>Stylish loft near the centro; creative remodel, quiet, great host. Walkable to Sassi without living deep in the caves.</p><p><a href="https://www.booking.com/hotel/it/il-granile-contemporary-loft.html" target="_blank" rel="noopener">Booking.com</a></p></div>
       <div class="card"><h3>Alberobello · Uniconico or Masseria Rosa</h3><div class="meta">11–14 Oct · ~€150–160/night</div><p><strong>Uniconico</strong> (9.7): real trullo in town, walk everywhere.<br/><strong>Masseria Rosa</strong> (9.3): countryside pool + ciclovia access — better bike base.</p>
         <p><a href="https://www.booking.com/hotel/it/uniconico-trullo-amp-rooms.html" target="_blank" rel="noopener">Uniconico</a> · <a href="https://www.booking.com/hotel/it/masseria-rosa-trulli-relais.html" target="_blank" rel="noopener">Masseria Rosa</a></p></div>
-      <div class="card"><h3>Monopoli · Palazzo Veneziani</h3><div class="meta">14–18 Oct · ~€156/night · 9.9 (thin sample)</div><p>Old-town character, spacious rooms, strong host praise. Base for Polignano + Ostuni.</p><p><a href="https://www.booking.com/hotel/it/palazzo-veneziani.html" target="_blank" rel="noopener">Booking.com</a></p></div>
+      <div class="card"><h3>Monopoli · Palazzo Veneziani</h3><div class="meta">14–18 Oct · ~€156/night · 9.9 (thin sample)</div><p>Old-town character, spacious rooms, strong host praise. Base for Polignano, Tenute Rubino, and Ostuni.</p><p><a href="https://www.booking.com/hotel/it/palazzo-veneziani.html" target="_blank" rel="noopener">Booking.com</a></p></div>
       <div class="card"><h3>Lecce · Palazzo Bernardini Suites</h3><div class="meta">18–20 Oct · ~€165/night B&amp;B · 9.5</div><p>Quiet street near the Duomo; antique suites, lovely breakfast, “private home” feel.</p><p><a href="https://www.booking.com/hotel/it/palazzo-bernardini.html" target="_blank" rel="noopener">Booking.com</a></p></div>
       <div class="card"><h3>Malpensa · airport hotel</h3><div class="meta">20 Oct (1 night)</div><p>Simple overnight near MXP for the midday CX234 — Sheraton / Hilton Garden / similar. Book with free cancellation once the BDS→MXP hop is locked.</p></div>
     </div>
@@ -372,7 +327,7 @@
 
   <section id="experiences">
     <h2>Experiences</h2>
-    <p class="meta">Recommended experiences woven into the days above — book timed or guided slots ahead where noted.</p>
+    <p class="meta">Woven into the days above — book timed or guided slots ahead where noted.</p>
     <div class="grid two">
       <div class="card">
         <h3>Casa Grotta</h3>
@@ -405,9 +360,14 @@
         <p>~1.5–2.5h sea caves including Grotta Palazzese. Book refundable; October weather can cancel. Backup: Monopoli–Polignano bike loop + La Rotellina.</p>
       </div>
       <div class="card">
+        <h3>Tenute Rubino</h3>
+        <div class="meta">Fri 16 Oct · Brindisi area · from Monopoli · book ahead</div>
+        <p>Home of <strong>Susumaniello</strong> — guided cellar visit and tasting (options from ~€35 / 1.5h Wine &amp; Cellar up to the ~€85 / ~3h Susumaniello Experience with food at Numero Primo). Easy day trip from Monopoli (~45–55 min). Book ahead via <a href="https://www.tenuterubino.com/visit-tenute-rubino/?lang=en" target="_blank" rel="noopener">tenuterubino.com</a> or Winalist. Replaces the old “beach day” with something October actually wants.</p>
+      </div>
+      <div class="card">
         <h3>Ostuni Saturday market + olive walk</h3>
         <div class="meta">Sat 17 Oct · from Monopoli base · sole Ostuni day</div>
-        <p>Only Ostuni visit of the trip (Wed 14 skipped the white city for a direct coast move). Morning market, then a short olive-grove walk. Elevate this over a second coast spin unless you want pure rest.</p>
+        <p>Only Ostuni visit of the trip (Wed 14 skipped the white city for a direct coast move). Morning market, then a short olive-grove walk.</p>
       </div>
       <div class="card">
         <h3>Conti Zecca</h3>
@@ -421,18 +381,21 @@
     <h2>Bike loops (detail)</h2>
     <div class="card">
       <h3>1 · Valle d’Itria Acquedotto</h3>
-      <div class="meta">~50–55 km · rolling · signature ride · from Alberobello base · Mon 12 Oct</div>
-      <p>Mix of the dedicated <em>Ciclovia dell’Acquedotto Pugliese</em> (~scenic aqueduct path) and quiet secondary roads through olive and trulli country. Links Alberobello, Locorotondo, and Cisternino — the postcard inland trio. Slot <strong>Cantina MIR</strong> in Locorotondo; shorten if the tasting runs long.</p>
+      <div class="stats"><strong>Distance:</strong> ~50–56 km · <strong>Elevation gain:</strong> approx. 440–555 m · <strong>Main draw:</strong> Ciclovia dell’Acquedotto + white towns (Alberobello–Locorotondo–Cisternino) · Cantina MIR stop</div>
+      <div class="meta">Signature ride · from Alberobello base · Mon 12 Oct · sources: Puglia e-bike (~50 km / 440 m), Wikiloc Valle d’Itria AQP loop (~56 km / 555 m)</div>
+      <p>Mix of the dedicated <em>Ciclovia dell’Acquedotto Pugliese</em> and quiet secondary roads through olive and trulli country. Links Alberobello, Locorotondo, and Cisternino — the postcard inland trio. Slot <strong>Cantina MIR</strong> in Locorotondo; shorten if the tasting runs long. Rolling terrain, not steep alpine climbing.</p>
     </div>
     <div class="card" style="margin-top:1rem">
       <h3>2 · Trulli &amp; Martina Franca</h3>
-      <div class="meta">~50–60 km · a bit more climbing · optional / shorter on Tue 13 Oct</div>
-      <p>Country lanes past cone-roof houses toward Noci or Martina Franca’s baroque centre. With the olive mill + cooking class filling Tue 13, treat this as optional or a short spin only.</p>
+      <div class="stats"><strong>Distance:</strong> ~35–40 km · <strong>Elevation gain:</strong> approx. 300–360 m · <strong>Main draw:</strong> trulli countryside lanes + Martina Franca’s baroque centro</div>
+      <div class="meta">Optional / shorter on Tue 13 Oct · sources: Komoot Itria Valley Villages loop (~39 km / 360 m), Bikemap Martina–Alberobello (~35 km / ~306 m)</div>
+      <p>Country lanes past cone-roof houses toward Martina Franca. With the olive mill + cooking class filling Tue 13, treat this as optional or a short spin only — the mill and pasta are the day’s heart.</p>
     </div>
     <div class="card" style="margin-top:1rem">
       <h3>3 · Monopoli–Polignano coast</h3>
-      <div class="meta">~45–55 km · flatter · backup for Thu 15 Oct if seas cancel the boat</div>
-      <p>Adriatic cliffs, old harbours, gelato towns. Busier near the water — start early. Primary plan for 15 Oct is the boat cave tour; keep this loop + La Rotellina as the rough-sea backup.</p>
+      <div class="stats"><strong>Distance:</strong> ~28–32 km out-and-back (or ~45–50 km if you extend the coastal spin) · <strong>Elevation gain:</strong> approx. 90–180 m · <strong>Main draw:</strong> Adriatic cliff views, Polignano centro, Lama Monachile</div>
+      <div class="meta">Backup for Thu 15 Oct if seas cancel the boat · sources: Bikemap Monopoli–Polignano (~15 km / ~88 m one way), Probike north-coast loop via Polignano (~48 km, mostly flat)</div>
+      <p>Nearly flat coastal riding between harbours and cliffs. Busier near the water — start early. Primary plan for 15 Oct is the boat cave tour; keep this loop + La Rotellina as the rough-sea backup.</p>
     </div>
   </section>
 
@@ -440,20 +403,21 @@
     <h2>Places &amp; points of interest</h2>
 
     <div class="card">
-      <div class="poi"><strong>Colosseum (Rome)</strong><br/>Ancient amphitheatre and Rome’s icon — morning visit on 9 Oct for JJ before the Bari train. Pre-book a timed ticket (standard arena floor / underground options as preference and energy allow). Pair with a quick exterior pass of the Forum if time; prioritise the Colosseum itself over a full ancient-Rome day.</div>
-      <div class="poi"><strong>Matera &amp; the Sassi</strong><br/>One of the world’s oldest continually inhabited places: cave dwellings stacked in ravines (Sasso Caveoso &amp; Barisano), now a UNESCO site and cinematic backdrop. Best on foot — uneven stone, stairs, viewpoints over the Gravina gorge.</div>
-      <div class="poi"><strong>Casa Grotta (Matera)</strong><br/>Furnished cave home (examples on/near Vico Solitario) reconstructing daily life in the Sassi — cistern, mule stall, kitchen. Easy stop during the Sat 10 walking day.</div>
+      <div class="poi"><strong>Colosseum (Rome)</strong><br/>Ancient amphitheatre and Rome’s icon — morning visit on 9 Oct for JJ before the Bari train. Pre-book a timed ticket. Pair with a quick exterior pass of the Forum if time; prioritise the Colosseum itself over a full ancient-Rome day.</div>
+      <div class="poi"><strong>Matera &amp; the Sassi</strong><br/>One of the world’s oldest continually inhabited places: cave dwellings stacked in ravines (Sasso Caveoso &amp; Barisano), now a UNESCO site. Best on foot — uneven stone, stairs, viewpoints over the Gravina gorge.</div>
+      <div class="poi"><strong>Casa Grotta (Matera)</strong><br/>Furnished cave home (examples on/near Vico Solitario) reconstructing daily life in the Sassi. Easy stop during the Sat 10 walking day.</div>
       <div class="poi"><strong>Cripta del Peccato Originale</strong><br/>Rock-cut crypt ~15 km from Matera with extraordinary medieval frescoes (“Sistine of rock art”). Timed guided visits only — book ahead for Sat 10.</div>
       <div class="poi"><strong>Alberobello</strong><br/>UNESCO town of <em>trulli</em> — white limestone huts with conical stone roofs. Touristy at midday; magical early or late. Ideal e-bike hub for Valle d’Itria and base for the cooking class.</div>
-      <div class="poi"><strong>Locorotondo</strong><br/>Circular white hill town with a refined centro and wide views over vineyards and trulli roofs. Classic coffee/lunch stop on the aqueduct loop — and home to <strong>Cantina MIR</strong> (Piazza Aldo Moro 51).</div>
-      <div class="poi"><strong>Cantina MIR (Locorotondo)</strong><br/>Hypogeum (underground) cellar tasting of Verdeca / Locorotondo DOC and reds. Book a slot; fits neatly into Loop 1.</div>
+      <div class="poi"><strong>Locorotondo</strong><br/>Circular white hill town with a refined centro and wide views over vineyards and trulli roofs. Classic stop on the aqueduct loop — and home to <strong>Cantina MIR</strong> (Piazza Aldo Moro 51).</div>
+      <div class="poi"><strong>Cantina MIR (Locorotondo)</strong><br/>Hypogeum cellar tasting of Verdeca / Locorotondo DOC and reds. Book a slot; fits neatly into Loop 1.</div>
       <div class="poi"><strong>Cisternino</strong><br/>Quieter white town famous for evening <em>fornelli</em> (butcher-grill culture). Charming lanes; less crowded than Alberobello.</div>
       <div class="poi"><strong>Martina Franca</strong><br/>Larger baroque town on the edge of the valley — palazzi, gates, and a lived-in centre. Base for <strong>L’Acropoli di Puglia</strong> olive mill; optional short stroll on experiences day.</div>
       <div class="poi"><strong>L’Acropoli di Puglia (Martina Franca)</strong><br/>Historic olive oil mill with tour and tasting. Especially worthwhile in mid-October harvest season.</div>
-      <div class="poi"><strong>Ciclovia dell’Acquedotto Pugliese</strong><br/>Long-distance cycle path following the historic aqueduct. The Valle d’Itria section is the scenic heart: mostly dedicated path mixed with quiet roads (not 100% bike-only).</div>
-      <div class="poi"><strong>Ostuni</strong><br/>The “white city” on a hill above olive country — blinding white walls, cathedral, Adriatic views. Sole visit: <strong>Sat 17</strong> Saturday morning market + olive-grove walk from the Monopoli base (not a mid-trip stop on the Wed 14 inland→coast move).</div>
-      <div class="poi"><strong>Monopoli</strong><br/>Working harbour town with a lively old centre and nearby coves. Practical coast base: restaurants, character stays, easy access to Polignano and Ostuni.</div>
-      <div class="poi"><strong>Polignano a Mare</strong><br/>Cliff town over turquoise water; Lama Monachile beach cove is the iconic shot. Primary for the <strong>boat cave tour</strong> (Grotta Palazzese etc.); bike loop + La Rotellina if seas cancel.</div>
+      <div class="poi"><strong>Ciclovia dell’Acquedotto Pugliese</strong><br/>Long-distance cycle path following the historic aqueduct. The Valle d’Itria section is the scenic heart: mostly dedicated path mixed with quiet roads.</div>
+      <div class="poi"><strong>Ostuni</strong><br/>The “white city” on a hill above olive country. Sole visit: <strong>Sat 17</strong> Saturday morning market + olive-grove walk from the Monopoli base (not a mid-trip stop on the Wed 14 inland→coast move).</div>
+      <div class="poi"><strong>Monopoli</strong><br/>Working harbour town with a lively old centre. Practical coast base: restaurants, character stays, easy access to Polignano, Tenute Rubino (Brindisi), and Ostuni.</div>
+      <div class="poi"><strong>Polignano a Mare</strong><br/>Cliff town over turquoise water; Lama Monachile is the iconic cove. Primary for the <strong>boat cave tour</strong>; bike loop + La Rotellina if seas cancel.</div>
+      <div class="poi"><strong>Tenute Rubino (Brindisi)</strong><br/>Winery known for Susumaniello — cellar tours and tastings at Via Enrico Fermi. Day trip from Monopoli on Fri 16; book ahead.</div>
       <div class="poi"><strong>Lecce</strong><br/>“Florence of the South” — exuberant Leccese baroque in golden stone (Santa Croce, Piazza Duomo). Walkable finale; evening food after the Conti Zecca day trip.</div>
       <div class="poi"><strong>Conti Zecca (Leverano)</strong><br/>Salento winery ~30–40 min from Lecce — cellar tour and Negroamaro / Primitivo tasting. Book for Mon 19; keep the evening for Lecce.</div>
       <div class="poi"><strong>Brindisi Airport (BDS)</strong><br/>Handy exit for Salento; ~40–50 min from Lecce. Drop the one-way hire car here before the Milan connector.</div>
@@ -466,8 +430,9 @@
       <li><strong>Matera</strong> — ARA; Era Convivial Cave Restaurant</li>
       <li><strong>Polignano</strong> — La Rotellina (pastry)</li>
       <li><strong>Savelletri area</strong> — Masseria Torre Coccaro (dinner; upscale)</li>
+      <li><strong>Monopoli harbour</strong> — long seafood lunch or dinner after the Rubino day (Fri 16)</li>
       <li><strong>Cooking class (near Alberobello)</strong> — orecchiette and seasonal produce in a trullo (Tue 13); eat what you make</li>
-      <li>Local staples: orecchiette, burrata, grilled meats in Cisternino, seafood on the Adriatic; mill oil and cellar wines from the experience days</li>
+      <li>Local staples: orecchiette, burrata, grilled meats in Cisternino, Adriatic seafood; mill oil and cellar wines (MIR, Rubino Susumaniello, Conti Zecca)</li>
     </ul>
   </section>
 
